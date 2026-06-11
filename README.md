@@ -44,7 +44,8 @@ This project automates the compliance review lifecycle by combining multimodal A
 
 ## Architecture
 
-![Architecture](docs/architecture.png)
+<img width="1503" height="915" alt="image" src="https://github.com/user-attachments/assets/c7c0ea28-07a9-4230-8ad8-0e69b793d760" />
+
 
 The solution consists of the following components:
 
@@ -242,25 +243,24 @@ The solution is deployed on Microsoft Azure using a cloud-native architecture.
 
 ## Screenshots
 
-### LangGraph Workflow
+### LangSmith Execution Trace
 
-Add screenshot here.
+<img width="1707" height="950" alt="image" src="https://github.com/user-attachments/assets/a3c481e5-95a8-4954-bd72-44761d71a339" />
 
-### LangSmith Traces
-
-Add screenshot here.
 
 ### Azure Resource Deployment
 
-Add screenshot here.
+<img width="910" height="461" alt="{88CC3B8C-138A-4DA7-92E5-9787C6C1827C}" src="https://github.com/user-attachments/assets/2fc20c40-f3f3-4b82-aa7f-82016f7c5751" />
 
-### Application Insights Dashboard
 
-Add screenshot here.
+### Azure Application Insights Monitoring
+
+<img width="1609" height="902" alt="image" src="https://github.com/user-attachments/assets/0d68829a-fcd1-41d0-b0ad-f11fdf0cf489" />
 
 ### Compliance Report Output
 
-Add screenshot here.
+<img width="1899" height="1029" alt="image" src="https://github.com/user-attachments/assets/e5c81fa1-b077-4fbc-95ff-a664f9d6908b" />
+
 
 ---
 
