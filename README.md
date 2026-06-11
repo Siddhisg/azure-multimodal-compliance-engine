@@ -51,7 +51,8 @@ The system follows a multi-stage workflow:
 
 ### Architecture Diagram
 
-![Architecture](docs/architecture.png)
+<img width="752" height="458" alt="{F91AE460-616B-4790-8EEC-38918E42C340}" src="https://github.com/user-attachments/assets/a947a653-fcd5-43bb-9b87-270a038ca3f3" />
+
 
 ---
 
