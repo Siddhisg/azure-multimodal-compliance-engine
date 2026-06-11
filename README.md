@@ -283,6 +283,10 @@ The solution is deployed on Microsoft Azure using a cloud-native architecture.
 
 ---
 
+Knowledge sources used:
+- Influencer compliance guidelines
+- YouTube advertising specifications
+
 ## Author
 
 **Siddhi Gaikwad**
