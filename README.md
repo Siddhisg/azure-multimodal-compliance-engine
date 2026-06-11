@@ -1,77 +1,133 @@
-# Azure Multimodal Compliance QA Pipeline
+# Azure Multimodal Compliance Orchestration Engine
 
-## Overview
+### End-to-End Multimodal LLMOps Project with Azure Deployment, LangGraph, Observability & Agentic Workflows
 
-The Azure Multimodal Compliance QA Pipeline is an end-to-end LLMOps solution designed to automate compliance validation for marketing and influencer video content. The system leverages Azure AI services, Retrieval-Augmented Generation (RAG), LangGraph orchestration, and observability tools to analyze content, identify policy violations, and generate structured compliance reports.
+## Project Overview
 
-This project demonstrates the implementation of a production-oriented multimodal AI workflow capable of processing video content, retrieving relevant compliance guidelines, evaluating content against regulatory requirements, and providing actionable compliance insights.
+Built a production-grade Multimodal LLMOps platform that automates compliance validation for video-based marketing, advertising, and influencer content using Azure AI services, LangGraph orchestration, Retrieval-Augmented Generation (RAG), and enterprise-grade observability.
+
+The system ingests video content, extracts multimodal signals such as transcripts and OCR data, retrieves relevant compliance guidelines, performs intelligent policy validation using Azure OpenAI, and generates structured compliance reports. The entire workflow is monitored using LangSmith and Azure Application Insights, enabling complete traceability, monitoring, and debugging across the AI pipeline.
 
 ---
 
 ## Business Problem
 
-Organizations and brands must ensure that marketing campaigns, influencer content, and promotional videos comply with advertising regulations, platform policies, and internal brand guidelines.
+Organizations spend significant time and resources manually reviewing marketing and influencer content to ensure compliance with regulatory requirements, advertising standards, and internal brand policies.
 
-Manual compliance review is often:
+Traditional review processes are:
 
-* Time-consuming
-* Resource-intensive
+* Time-intensive
 * Difficult to scale
-* Susceptible to human error
+* Prone to human error
+* Expensive to maintain
 
-This solution automates the review process by combining multimodal AI capabilities with intelligent retrieval and agent-based reasoning.
-
----
-
-## Key Features
-
-* Automated compliance validation for video content
-* Retrieval-Augmented Generation (RAG) architecture
-* LangGraph-based workflow orchestration
-* Compliance rule retrieval using Azure AI Search
-* Policy violation detection and explanation
-* Structured compliance report generation
-* End-to-end tracing using LangSmith
-* Application monitoring through Azure Application Insights
-* Scalable cloud-native architecture
+This project automates the compliance review lifecycle by combining multimodal AI processing, agentic orchestration, cloud-native deployment, and observability.
 
 ---
 
-## Solution Architecture
+## Solution Highlights
 
-The system follows a multi-stage workflow:
+* End-to-end Multimodal LLMOps implementation
+* Azure-native cloud architecture
+* Video compliance validation pipeline
+* Agentic workflow orchestration using LangGraph
+* Retrieval-Augmented Generation (RAG)
+* Azure Video Indexer integration
+* Azure AI Search-based compliance retrieval
+* Azure OpenAI-powered reasoning engine
+* LangSmith tracing and observability
+* Azure Application Insights monitoring
+* Production-ready deployment architecture
+* Structured JSON compliance reporting
 
-1. Video content ingestion
-2. Content and transcript extraction
-3. Compliance guideline retrieval
-4. Agentic reasoning and evaluation
-5. Violation detection
-6. Report generation
-7. Monitoring and observability
+---
 
-### Architecture Diagram
+## Architecture
 
-<img width="752" height="458" alt="{F91AE460-616B-4790-8EEC-38918E42C340}" src="https://github.com/user-attachments/assets/a947a653-fcd5-43bb-9b87-270a038ca3f3" />
+![Architecture](docs/architecture.png)
 
+The solution consists of the following components:
+
+### 1. Video Ingestion Layer
+
+* Video content upload
+* Content processing
+* Metadata extraction
+
+### 2. Multimodal Processing Layer
+
+* Transcript extraction
+* OCR extraction
+* Content enrichment
+
+### 3. Knowledge Retrieval Layer
+
+* Compliance document indexing
+* Azure AI Search retrieval
+* Vector search using embeddings
+
+### 4. Agentic Orchestration Layer
+
+* LangGraph workflow orchestration
+* Multi-step compliance reasoning
+* Rule evaluation workflow
+
+### 5. AI Reasoning Layer
+
+* Azure OpenAI GPT models
+* Compliance violation detection
+* Evidence-based decision making
+
+### 6. Observability Layer
+
+* LangSmith workflow tracing
+* Prompt monitoring
+* Agent execution tracking
+* Debugging and performance analysis
+
+### 7. Monitoring Layer
+
+* Azure Application Insights
+* Telemetry collection
+* Performance monitoring
+* Error tracking
+
+### 8. Reporting Layer
+
+* Structured JSON outputs
+* Compliance recommendations
+* Violation summaries
+
+---
+
+## Azure Services Used
+
+* Azure OpenAI Service
+* Azure AI Search
+* Azure Video Indexer
+* Azure Application Insights
+* Azure Resource Groups
+* Azure Monitoring Services
 
 ---
 
 ## Technology Stack
-
-### Cloud Services
-
-* Microsoft Azure
-* Azure OpenAI
-* Azure AI Search
-* Azure Application Insights
 
 ### AI & LLMOps
 
 * LangGraph
 * LangChain
 * LangSmith
-* GPT Models
 * Retrieval-Augmented Generation (RAG)
+* Prompt Engineering
+
+### Cloud Platform
+
+* Microsoft Azure
+* Azure OpenAI
+* Azure AI Search
+* Azure Video Indexer
+* Azure Application Insights
 
 ### Development
 
@@ -80,57 +136,107 @@ The system follows a multi-stage workflow:
 
 ---
 
-## Workflow
+## End-to-End Workflow
 
-### Step 1: Content Ingestion
+### Step 1 – Video Upload
 
-Video content is provided as input for compliance evaluation.
+Marketing or influencer content is submitted for compliance review.
 
-### Step 2: Compliance Knowledge Retrieval
+### Step 2 – Multimodal Extraction
 
-Relevant compliance rules and advertising policies are retrieved using Azure AI Search.
+The system extracts:
 
-### Step 3: Agentic Evaluation
+* Video transcript
+* OCR text
+* Metadata
 
-LangGraph orchestrates multiple reasoning steps to evaluate the content against compliance requirements.
+### Step 3 – Compliance Retrieval
 
-### Step 4: Violation Detection
+Relevant compliance guidelines and policy documents are retrieved using Azure AI Search.
 
-The system identifies potential compliance issues and generates supporting explanations.
+### Step 4 – Agentic Orchestration
 
-### Step 5: Compliance Report Generation
+LangGraph coordinates multiple workflow stages and decision nodes to perform compliance evaluation.
 
-A structured report is produced containing:
+### Step 5 – AI Compliance Analysis
+
+Azure OpenAI evaluates the content against retrieved policies and regulations.
+
+### Step 6 – Violation Detection
+
+Potential violations are identified along with supporting evidence and explanations.
+
+### Step 7 – Report Generation
+
+The system generates structured compliance reports containing:
 
 * Compliance status
-* Identified violations
-* Supporting evidence
+* Violations identified
+* Evidence
 * Recommendations
 
-### Step 6: Monitoring and Observability
+### Step 8 – Observability & Monitoring
 
-All workflow executions are traced and monitored using LangSmith and Azure Application Insights.
+LangSmith and Application Insights capture:
+
+* Workflow traces
+* Model interactions
+* Performance metrics
+* Error logs
+* Execution telemetry
 
 ---
 
-## Project Structure
+## Azure Deployment
 
-```text
-ComplianceQAPipeline/
-│
-├── main.py
-├── pyproject.toml
-├── uv.lock
-├── README.md
-├── .env.example
-├── .gitignore
-│
-├── docs/
-│   ├── architecture.png
-│   └── screenshots/
-│
-└── sample_data/
-```
+The solution is deployed on Microsoft Azure using a cloud-native architecture.
+
+### Deployment Components
+
+* Azure OpenAI for LLM inference
+* Azure AI Search for knowledge retrieval
+* Azure Video Indexer for multimodal processing
+* Azure Application Insights for monitoring
+* LangSmith for AI observability
+
+### Deployment Capabilities
+
+* Scalable cloud infrastructure
+* Centralized monitoring
+* Production-grade observability
+* Enterprise-ready architecture
+* Secure AI service integration
+
+---
+
+## Observability & Monitoring
+
+### LangSmith
+
+* Prompt tracing
+* Workflow visualization
+* Agent monitoring
+* Execution debugging
+* Performance optimization
+
+### Azure Application Insights
+
+* Real-time telemetry
+* Request monitoring
+* Error tracking
+* Latency analysis
+* Application health monitoring
+
+---
+
+## Project Outcomes
+
+* Automated compliance review process
+* Reduced manual audit effort
+* Improved review consistency
+* Enhanced traceability and explainability
+* Production-grade AI observability
+* Cloud-native deployment architecture
 
 ---
 
@@ -140,11 +246,15 @@ ComplianceQAPipeline/
 
 Add screenshot here.
 
-### LangSmith Execution Trace
+### LangSmith Traces
 
 Add screenshot here.
 
-### Azure Application Insights Dashboard
+### Azure Resource Deployment
+
+Add screenshot here.
+
+### Application Insights Dashboard
 
 Add screenshot here.
 
@@ -154,103 +264,26 @@ Add screenshot here.
 
 ---
 
-
-
-### Install Dependencies
-
-Using UV:
-
-```bash
-uv sync
-```
-
-Or using pip:
-
-```bash
-pip install -r requirements.txt
-```
-
-### Configure Environment Variables
-
-Create a `.env` file based on `.env.example`.
-
-Example:
-
-```env
-AZURE_OPENAI_ENDPOINT=
-AZURE_OPENAI_KEY=
-
-AZURE_SEARCH_ENDPOINT=
-AZURE_SEARCH_KEY=
-
-LANGSMITH_API_KEY=
-
-APPLICATIONINSIGHTS_CONNECTION_STRING=
-```
-
-### Run the Application
-
-```bash
-python main.py
-```
-
----
-
-## Observability
-
-### LangSmith
-
-* Workflow tracing
-* Agent execution monitoring
-* Prompt debugging
-* Run analysis
-
-### Azure Application Insights
-
-* Application monitoring
-* Performance metrics
-* Error tracking
-* Operational visibility
-
----
-
-## Sample Use Cases
-
-* Influencer marketing compliance review
-* Advertising policy validation
-* Brand governance automation
-* Marketing campaign approval workflows
-* Regulatory compliance assessment
-
----
-
-## Future Enhancements
-
-* Real-time compliance validation
-* Multi-language support
-* Interactive compliance dashboard
-* Human-in-the-loop review process
-* Automated remediation recommendations
-
----
-
 ## Skills Demonstrated
 
 * LLMOps
-* Agentic AI Workflows
-* Retrieval-Augmented Generation (RAG)
+* Agentic AI Systems
 * Azure OpenAI
 * Azure AI Search
+* Azure Video Indexer
 * LangGraph
 * LangSmith
-* Application Monitoring
-* Cloud-Based AI Solutions
 * Prompt Engineering
-* Python Development
+* RAG Architecture
+* Observability Engineering
+* Azure Deployment
+* Cloud AI Architecture
+* AI Monitoring & Telemetry
+* Enterprise AI Workflows
 
 ---
 
 ## Author
 
-Siddhi Gaikwad
+**Siddhi Gaikwad**
 
